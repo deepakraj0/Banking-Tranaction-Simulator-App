@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+
+            android:background="@color/design_default_color_primary"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/profilepic"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+
+                app:srcCompat="@drawable/ic_imglogo">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/profilepic"
+                android:includeFontPadding="false"
+                android:text="Loading"
+                android:textSize="25dp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/userid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/profilepic"
+                android:includeFontPadding="false"
+                android:text="Welcome to BTS"
+                android:textSize="14dp"
+                />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-100dp"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="124dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/design_default_color_primary"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        app:srcCompat="@drawable/ic_ac_bal" />
+
+                    <TextView
+                        android:id="@+id/balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:includeFontPadding="false"
+                        android:text="Loading"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/balDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/balance"
+                        android:layout_centerInParent="true"
+                        android:includeFontPadding="false"
+                        android:text="Balance"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="124dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/design_default_color_primary"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        app:srcCompat="@drawable/ic_baseline_swap_horizontal_circle_24" />
+
+                    <TextView
+                        android:id="@+id/noOfTrans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:includeFontPadding="false"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/transDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/noOfTrans"
+                        android:layout_centerInParent="true"
+                        android:includeFontPadding="false"
+                        android:text="Transactions"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Full Name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/ic_user_small"
+                    android:drawablePadding="10dp"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:text="Loading"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/ic_email_24"
+                    android:drawablePadding="10dp"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:text="@string/loadingEmail"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="A/C Number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etACNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/ac_no"
+                    android:drawablePadding="10dp"
+                    android:text="Loading"
+                    android:enabled="false"
+                    android:textColor="@color/black"
+                    android:focusable="false"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="IFSC">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etIFSC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/ic_ifsc_24"
+                    android:drawablePadding="10dp"
+                    android:text="Loading"
+                    android:enabled="false"
+                    android:textColor="@color/black"
+                    android:focusable="false"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btnTransfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Transfer"
+                app:cornerRadius="6dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
