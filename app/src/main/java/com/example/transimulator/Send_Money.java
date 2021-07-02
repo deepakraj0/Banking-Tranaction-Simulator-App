@@ -31,7 +31,7 @@ public class Send_Money extends AppCompatActivity {
     FirebaseAuth auth;
     FirebaseUser user;
     DatabaseReference reference;
-    List<users> usersList = new ArrayList<>();
+
     users enteredOb;
     int currentUserBal,sent,received;
 
